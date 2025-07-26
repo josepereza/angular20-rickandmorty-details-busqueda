@@ -42,11 +42,11 @@
 
 
 .btn-success {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
 }
  .btn-sucess:hover {
     transform: translateY(-3px)!important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)!important;
   }
 
   .hero-text {
@@ -60,6 +60,10 @@
   margin: 0;
   animation: slideInTitle 1.2s ease-out forwards;
   opacity: 0;
+}
+
+.hero-title:hover {
+  text-shadow: 0 0 10px #ffffff88, 0 0 20px #44aaff !important;
 }
 
 .hero-subtitle {
