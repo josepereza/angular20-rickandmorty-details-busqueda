@@ -48,3 +48,60 @@
     transform: translateY(-3px)!important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
+  .hero-text {
+  animation: fadeInUpContainer 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  animation: slideInTitle 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #ccccff;
+  animation: fadeInSubtitle 1.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+/* Animaciones */
+@keyframes fadeInUpContainer {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTitle {
+  0% {
+    transform: scale(0.9) translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtitle {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
