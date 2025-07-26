@@ -1,0 +1,27 @@
+<section class="character-section  ">
+
+<div class="container">
+    <br><br><br>
+     <div class="row mb-4">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Buscar personaje..." [formControl]="searchControl">
+    </div>
+  </div>
+  <div class="row ">
+    @for (character of characters(); track character.id) {
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img [src]="character.image" class="card-img-top" [alt]="character.name">
+          <div class="card-body">
+            <h5 class="card-title">{{ character.name }}</h5>
+            <a [routerLink]="['/character', character.id]" class="btn btn-primary">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+
+
+</section>

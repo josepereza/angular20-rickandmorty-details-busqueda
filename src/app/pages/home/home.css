@@ -1,0 +1,50 @@
+.hero-section {
+  height: 100vh;
+
+  
+  background-image: url('/rickandmorty.avif');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  position: relative;
+  background-color: black;
+}
+
+
+.hero-section::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+.hero-content {
+  
+  position: relative;
+  z-index: 2;
+
+  
+  h1, p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.801);
+  }
+}
+
+
+.btn-success {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+ .btn-sucess:hover {
+    transform: translateY(-3px)!important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }

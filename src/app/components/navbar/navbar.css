@@ -1,0 +1,20 @@
+.navbar {
+    background-color: rgba(240, 248, 255, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+a {
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.801);
+  
+}
+.navbar-scrolled a {
+    color: aliceblue;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.479);
+  }}
